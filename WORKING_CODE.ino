@@ -11,17 +11,17 @@ const int BUTTON_PIN1 = A1;         // play/pause
 const int BUTTON_PIN2 = A3;         // skip
 const int LED_OUTPUT_BUZZ = 33;     // buzzer
 
-unsigned long clk = 100;             // adjust countdown time in milliseconds
-int focus = 2;                      // length of focus mode        
-int short_break = 1;                // length of short break
-int long_break = 3;                 // length of long break
+unsigned long clk = 1000;             // adjust countdown time in milliseconds
+int focus = 25;                      // length of focus mode        
+int short_break = 5;                // length of short break
+int long_break = 30;                 // length of long break
 
 bool blinkColon = false;
 bool switch_pp = false;             // false = pause, true = play
 bool resume = false;
 bool skip_flag = false;
 
-int minutesG = 2;                   // global variable minutes
+int minutesG = 25;                   // global variable minutes
 int secondsG = 0;                   // global variable seconds
 int countG = 1;                     // global variable count
 
